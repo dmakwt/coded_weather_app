@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
                       });
 
                       var response = await Dio().get(
-                        'http://api.weatherstack.com/current?access_key=afe27c8314fee09a44128a27988797d5&query=${cityController.text}',
+                        'http://api.weatherstack.com/current?access_key=[yourKey]&query=${cityController.text}',
                       );
 
                       final temp = response.data['current']['temperature'];
